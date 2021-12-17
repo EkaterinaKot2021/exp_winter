@@ -8,25 +8,26 @@ public class Main {
 
         boolean isSorted = false;
         int temp = 0;
-        while (!isSorted) {
+         while (!isSorted) {
             isSorted = true;
 
-            for (int i = 1; i < array.length; i++) ;
-            int i = 1;
-                if (array [i] < array[i - 1]) {
+            for(int i = 1; i < array.length; i++) {
+                if (array[i] < array[i - 1]) {
                     temp = array[i];
                     array[i] = array[i - 1];
                     array[i - 1] = temp;
 
                     isSorted = false;
 
-                    System.out.println(array [i]);
-                }
 
+                }
+            }
 
             }
 
-
+        for(int i = 0; i < array.length; i++) {
+            System.out.print(array[i] +" ");
+        }
 
         }
     }
