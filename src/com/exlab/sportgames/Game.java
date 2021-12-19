@@ -1,26 +1,41 @@
 package com.exlab.sportgames;
 
 public class Game {
+    private String type = "indoors";
 
-    public int teamNum = 2;
-    public String country = "Belarus";
+    public Game() {
 
-    public void setteamNum(int teamNumValue) {
-        this.teamNum = teamNumValue;
     }
-
-        public int getteamNum() {
-            return this.teamNum;
-        }
-
-    public void setcountry(String countryValue){
-        this.country = countryValue;
-        }
-
-        public String getcountry() {
-            return this.country;
+    public void setType(String type) {
+        this.type = type;
     }
+    public String getType(){
+        return this.type;
 
-     }
+    }
+}
+
+
+
+//    public int teamNum = 2;
+//    public String country = "Belarus";
+//
+  //  public void setTeamNum(int teamNumValue) {
+    //    this.teamNum = teamNumValue;
+//    }
+//
+ //       public int getTeamNum() {
+ //           return this.teamNum;
+//        }
+//
+ //   public void setCountry(String countryValue){
+//        this.country = countryValue;
+ //       }
+//
+//       public String getCountry() {
+ //           return this.country;
+//    }
+
+ //    }
 
 

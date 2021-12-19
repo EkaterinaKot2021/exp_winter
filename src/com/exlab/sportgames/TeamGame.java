@@ -1,16 +1,27 @@
 package com.exlab.sportgames;
 
-public class TeamGame {
-    private String name;
-    public String getName(){ return name; }
+public class TeamGame extends Game {
+    private String name = "TeamGame";
+    private String category = "Junior";
 
-    public TeamGame(String name){
-
-        this.name=name;
+    public TeamGame() {
     }
 
-    public void display(){
-
-        System.out.println("Name: " + name);
+    public TeamGame(String name) {
+            this.name = name;
+        }
+    public String getName() {
+        return this.name;
     }
+
+    public void setCategory(String type) {
+        this.category = category;
+    }
+
+    public String getCategory() {
+        return this.category;
+
+    }
+
+
 }
