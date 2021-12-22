@@ -10,6 +10,7 @@ public class TeamGame extends Game {
     public TeamGame(String name) {
             this.name = name;
         }
+
     public String getName() {
         return this.name;
     }
@@ -20,6 +21,10 @@ public class TeamGame extends Game {
 
     public String getCategory() {
         return this.category;
+
+    }
+    @Override
+    public void winning() {
 
     }
 

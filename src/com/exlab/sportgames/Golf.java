@@ -36,14 +36,6 @@ public class Golf extends SingleGame {
 
     }
 
-    public void printInfo() {
-        System.out.println("=====");
-        System.out.println("Name: " + this.name);
-        System.out.println("NumberOfPlayers: " + this.numberOfPlayers);
-        System.out.println("Moto: " + this.moto);
-        System.out.println("Type: " + getType());
-        System.out.println("Category: " + getCategory());
-        System.out.println("=====");
 
     }
-}
+

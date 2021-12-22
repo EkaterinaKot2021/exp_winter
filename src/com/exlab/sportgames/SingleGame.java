@@ -2,7 +2,7 @@ package com.exlab.sportgames;
 
 public class SingleGame extends Game {
     private String name = "SingleGame";
-    private String category = "Adult";
+    public String category = "Adult";
 
 
     public SingleGame() {
@@ -11,6 +11,7 @@ public class SingleGame extends Game {
             this.name = name;
 
     }
+
     public String getName() {
         return this.name;
     }
@@ -21,6 +22,10 @@ public class SingleGame extends Game {
 
     public String getCategory() {
         return this.category;
+
+    }
+    @Override
+    public void winning() {
 
     }
 
