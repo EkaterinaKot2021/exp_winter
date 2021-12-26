@@ -1,6 +1,8 @@
 package com.exlab.sportgames;
 
-public class Golf extends SingleGame {
+import com.exlab.stadium.IChampionate;
+
+public class Golf extends SingleGame implements IChampionate {
     private String name = "Golf";
     private int numberOfPlayers = 1;
     private String moto = "Golf is the best";
@@ -35,7 +37,24 @@ public class Golf extends SingleGame {
         return this.moto;
 
     }
+    public void printInfo() {
+        System.out.println("=====");
+        System.out.println("Name: " + this.name);
+        System.out.println("NumberOfPlayers: " + this.numberOfPlayers);
+        System.out.println("Moto: " + this.moto);
+        System.out.println("Type: " + getType());
+        System.out.println("Category: " + getCategory());
+        System.out.println("=====");
+    }
 
+
+    @Override
+    public String printInfoChampionate() {
+        return this.name;
+    }
+    @Override
+    public void winning() {
 
     }
+}
 

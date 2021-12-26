@@ -1,4 +1,4 @@
-package com.exlab;
+package com.exlab.human;
 
 public interface Human {
     public void sleep();

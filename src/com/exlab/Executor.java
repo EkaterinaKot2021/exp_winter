@@ -1,6 +1,9 @@
 package com.exlab;
 
+import com.exlab.human.Athlete;
+import com.exlab.human.Referee;
 import com.exlab.sportgames.*;
+import com.exlab.stadium.Stadium;
 
 public class Executor {
 
@@ -12,11 +15,11 @@ public class Executor {
         TableTennis tableTennis = new TableTennis();
         Golf golf = new Golf();
 
-//        Golf golf1 = new Golf("Golf111");
-//        golf1 setCategory("Junior");
-//        golf1 setMoto("Golf is super");
-//        golf1 setNumberOfPlayers(10);
-//        golf1 printInfo();
+        Golf golf1 = new Golf("Golf111");
+        golf1.setCategory("Junior");
+        golf1.setMoto("Golf is super");
+        golf1.setNumberOfPlayers(10);
+        golf1.printInfo();
 
         Rugby rugby1 = new Rugby("R1");
         String name = rugby1.getName();
@@ -28,6 +31,8 @@ public class Executor {
         System.out.println(basketball.getType());
         System.out.println(basketball.getName());
 
+        System.out.println("================");
+
         Athlete ivan = new Athlete();
         Referee pavel = new Referee();
 
@@ -38,11 +43,28 @@ public class Executor {
         pavel.sleep();
         pavel.speak();
 
+        System.out.println("================");
+
+
+        Stadium stadium1 = new Stadium("Arena");
+        stadium1.setGame(basketball);
+        stadium1.setGame(golf);
+        stadium1.setGame(billiards);
+        stadium1.setGame(football);
+        stadium1.setGame(rugby);
+        stadium1.setGame(tableTennis);
+        System.out.println(stadium1.getGame().printInfoChampionate());
 
 
 
 
+        Football football1 = new Football("Spartak");
+		football1.printInfo();
+		football1.winning();
+		football1.winning("5games");
 
+
+    }
     }
 //    public void printInfo() {
 //        System.out.println("=====");
@@ -52,7 +74,7 @@ public class Executor {
 //       System.out.println("Type: " + getType());
 //       System.out.println("Category: " + getCategory());
 //        System.out.println("=====");
-    }
+
 
 
 

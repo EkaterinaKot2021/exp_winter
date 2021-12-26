@@ -1,7 +1,9 @@
 package com.exlab.sportgames;
 
-public class Football extends TeamGame {
-    private String name = "Football";
+import com.exlab.stadium.IChampionate;
+
+public class Football extends TeamGame implements IChampionate {
+    private String name = "default";
     private int numberOfPlayers = 11;
     private String moto = "Football is the best";
 
@@ -31,5 +33,28 @@ public class Football extends TeamGame {
     public String getMoto() {
         return this.moto;
 
+    }
+    public void printInfo() {
+        System.out.println("=====");
+        System.out.println("Name: " + this.name);
+        System.out.println("NumberOfPlayers: " + this.numberOfPlayers);
+        System.out.println("Moto: " + this.moto);
+        System.out.println("Type: " + getType());
+        System.out.println("Category: " + getCategory());
+        System.out.println("=====");
+    }
+
+    @Override
+    public String printInfoChampionate() {
+        return this.name;
+    }
+
+    @Override
+    public void winning() {
+        System.out.println("2games");
+
+    }
+    public void winning(String manyGames) {
+        System.out.println(manyGames);
     }
 }

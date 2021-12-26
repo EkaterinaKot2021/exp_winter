@@ -1,6 +1,8 @@
-package com.exlab;
+package com.exlab.human;
 
-public class Referee implements Human{
+import com.exlab.human.Human;
+
+public class Referee implements Human {
     public void sleep() {
         System.out.println("10 hours");
 

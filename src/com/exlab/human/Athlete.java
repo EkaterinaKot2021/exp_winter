@@ -1,6 +1,6 @@
-package com.exlab;
+package com.exlab.human;
 
-public class Athlete implements Human{
+public class Athlete implements Human {
     public void sleep() {
         System.out.println("8 hours");
 
