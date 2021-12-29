@@ -1,8 +1,8 @@
 package com.exlab.sportgames;
 
-import com.exlab.stadium.IChampionate;
+import com.exlab.stadium.IChampionship;
 
-public class Rugby extends TeamGame implements IChampionate {
+public class Rugby extends TeamGame implements IChampionship {
     private String name = "Rugby";
     private int numberOfPlayers = 15;
     private String moto = "Rugby is the best";
@@ -45,7 +45,7 @@ public class Rugby extends TeamGame implements IChampionate {
     }
 
     @Override
-    public String printInfoChampionate() {
+    public String printInfoChampionship() {
         return this.name;
     }
     @Override

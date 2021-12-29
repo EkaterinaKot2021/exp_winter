@@ -1,7 +1,7 @@
 package com.exlab.stadium;
 
-public class Stadium {
-    private IChampionate game;
+public class Stadium implements IChampionship{
+    private IChampionship game;
     private String name;
 
     public Stadium() {
@@ -15,14 +15,17 @@ public class Stadium {
         return this.name;
     }
 
-    public void setGame(IChampionate game) {
+    public void setGame(IChampionship game) {
         this.game = game;
     }
 
-    public IChampionate getGame() {
+    public IChampionship getGame() {
         return this.game;
     }
 
 
-
+    @Override
+    public String printInfoChampionship() {
+        return this.name;
+    }
 }

@@ -1,9 +1,9 @@
 package com.exlab.sportgames;
 
-import com.exlab.stadium.IChampionate;
+import com.exlab.stadium.IChampionship;
 
-public class TableTennis extends SingleGame implements IChampionate {
-    private String name = "Rugby";
+public class TableTennis extends SingleGame implements IChampionship {
+    private String name = "TableTennis";
     private int numberOfPlayers = 2;
     private String moto = "TableTennis is the best";
 
@@ -45,7 +45,7 @@ public class TableTennis extends SingleGame implements IChampionate {
     }
 
     @Override
-    public String printInfoChampionate() {
+    public String printInfoChampionship() {
         return this.name;
     }
     @Override

@@ -5,6 +5,9 @@ import com.exlab.human.Referee;
 import com.exlab.sportgames.*;
 import com.exlab.stadium.Stadium;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Executor {
 
     public static void main(String[] args) {
@@ -47,14 +50,24 @@ public class Executor {
 
 
         Stadium stadium1 = new Stadium("Arena");
-        stadium1.setGame(basketball);
-        stadium1.setGame(golf);
-        stadium1.setGame(billiards);
-        stadium1.setGame(football);
-        stadium1.setGame(rugby);
-        stadium1.setGame(tableTennis);
-        System.out.println(stadium1.getGame().printInfoChampionate());
+        System.out.println(stadium1.getName());
 
+        stadium1.setGame(basketball);
+        System.out.println("basketball");
+
+        stadium1.setGame(billiards);
+        System.out.println("billiards");
+
+        stadium1.setGame(football);
+        System.out.println("football");
+
+        stadium1.setGame(rugby);
+        System.out.println("rugby");
+
+        stadium1.setGame(tableTennis);
+        System.out.println("tableTennis");
+
+        System.out.println("================");
 
 
 
@@ -62,6 +75,23 @@ public class Executor {
 		football1.printInfo();
 		football1.winning();
 		football1.winning("5games");
+
+        System.out.println("================");
+
+        List<String> listStr = new ArrayList<String>();
+        listStr.add("basketball");
+        listStr.add("football");
+        listStr.add("rugby");
+        listStr.add("golf");
+        listStr.add("billiards");
+        listStr.add("tableTennis");
+
+        for(String str1 : listStr) {
+            System.out.println(str1);
+        }
+
+
+
 
 
     }
