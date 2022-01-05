@@ -1,15 +1,15 @@
 package com.exlab.sportgames;
 
-public class SingleGame extends Game {
-    private String name = "SingleGame";
+public abstract class SingleGame extends Game {
+    private String name = "Default";
     private String category = "Adult";
 
 
     public SingleGame() {
     }
+
     public SingleGame(String name) {
             this.name = name;
-
     }
 
     public String getName() {
@@ -28,6 +28,7 @@ public class SingleGame extends Game {
     public void winning() {
 
     }
+
 
 }
 

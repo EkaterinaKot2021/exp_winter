@@ -1,7 +1,7 @@
 package com.exlab.sportgames;
 
-public class TeamGame extends Game {
-    private String name = "TeamGame";
+public abstract class TeamGame extends Game {
+    private String name = "Default";
     private String category = "Junior";
 
     public TeamGame() {
@@ -27,6 +27,8 @@ public class TeamGame extends Game {
     public void winning() {
 
     }
+
+
 
 
 }

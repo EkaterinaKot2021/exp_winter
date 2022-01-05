@@ -2,10 +2,13 @@ package com.exlab.sportgames;
 
 public abstract class Game {
     private String type = "indoors";
+    private String name = "Defaut";
+
 
     public Game() {
 
     }
+
     public Game(String type) {
         this.type = type;
     }
@@ -13,11 +16,18 @@ public abstract class Game {
     public void setType(String type) {
         this.type = type;
     }
-    public String getType(){
+
+    public String getType() {
         return this.type;
 
     }
+
+    public String getName() {
+        return this.name;
+
+    }
     public abstract void winning();
+
 
 }
 
