@@ -1,5 +1,6 @@
 package com.exlab;
 
+import com.exlab.exceptions.NewException;
 import com.exlab.human.Athlete;
 import com.exlab.human.Referee;
 import com.exlab.sportgames.*;
@@ -70,11 +71,10 @@ public class Executor {
         System.out.println("================");
 
 
-
         Football football1 = new Football("Spartak");
-		football1.printInfo();
-		football1.winning();
-		football1.winning("5games");
+        football1.printInfo();
+        football1.winning();
+        football1.winning("5games");
 
         System.out.println("================");
 
@@ -86,7 +86,7 @@ public class Executor {
         listStr.add("billiards");
         listStr.add("tableTennis");
 
-        for(String str1 : listStr) {
+        for (String str1 : listStr) {
             System.out.println(str1);
         }
 
@@ -104,14 +104,14 @@ public class Executor {
         stadium11.setBasketball(basketball3);
         stadium11.setBasketball(basketball4);
 
-        for(Basketball basketball : stadium11.getListBasketball()){
+        for (Basketball basketball : stadium11.getListBasketball()) {
             System.out.println(basketball.getName());
 
         }
         System.out.println("================");
 
         SingleGame golf33 = new Golf("Canada");
-        TeamGame rugby33 = new Rugby ("England");
+        TeamGame rugby33 = new Rugby("England");
         SingleGame tableTennis33 = new TableTennis("France");
         TeamGame football33 = new Football("Latvia");
 
@@ -122,6 +122,22 @@ public class Executor {
 
         stadium11.printListNameSingleGame();
         stadium11.printListNameTeamGame();
+
+        System.out.println("================");
+
+
+        try {
+            System.out.println("==One==");
+            throw new NewException();
+
+        } catch (NewException e) {
+            System.out.println("==Two==");
+        } finally {
+            System.out.println("==Three==");
+        }
+
+    }
+}
 
 
 
@@ -137,8 +153,8 @@ public class Executor {
 
 
 
-    }
-    }
+
+
 //    public void printInfo() {
 //        System.out.println("=====");
 //        System.out.println("Name: " + this.name);
